@@ -4,9 +4,6 @@
 # Log files
 *.log
 
-# BlueJ files
-*.ctxt
-
 # Mobile automation reports and outputs
 target/
 reports/
@@ -18,11 +15,9 @@ cucumber.json
 .mvn/
 !.mvn/wrapper/maven-wrapper.jar
 
-# Eclipse, NetBeans, IntelliJ IDEA
+# IDE files
 .project
 .classpath
-.c9/
-*.launch
 .settings/
 .idea/
 *.iml
@@ -34,9 +29,6 @@ out/
 .DS_Store
 Thumbs.db
 
-# Environment files
+# Environment/config files with secrets
+src/test/resources/config.properties
 .env
-*.properties.local
-
-# Misc
-*.swp
