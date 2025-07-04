@@ -21,14 +21,23 @@ This repository contains a Java-based mobile automation framework using **Appium
         │               └── automation
         │                   ├── runner
         │                   │   └── TestRunner.java
-        │                   └── steps
-        │                       ├── Hooks.java
-        │                       ├── SampleSteps.java
-        │                       └── LoginSteps.java
+        │                   ├── steps
+        │                   │   ├── Hooks.java
+        │                   │   ├── SampleSteps.java
+        │                   │   └── LoginSteps.java
+        │                   ├── pages
+        │                   │   ├── LoginPage.java
+        │                   │   └── SamplePage.java
+        │                   └── utils
+        │                       ├── DriverManager.java
+        │                       ├── CapabilityManager.java
+        │                       └── ConfigReader.java
         └── resources
-            └── features
-                ├── sample.feature
-                └── login.feature
+            ├── features
+            │   ├── sample.feature
+            │   └── login.feature
+            └── data
+                └── testdata.json
 ```
 
 ## Prerequisites
@@ -37,6 +46,8 @@ This repository contains a Java-based mobile automation framework using **Appium
 - Maven 3.6+
 - Appium (no local server needed for BrowserStack)
 - BrowserStack account (set environment variables: `BROWSERSTACK_USERNAME`, `BROWSERSTACK_ACCESS_KEY`, `BROWSERSTACK_ANDROID_APP_URL`, `BROWSERSTACK_IOS_APP_URL`)
+
+---
 
 ## Sample Apps for Testing
 
@@ -93,10 +104,29 @@ Or run both by default using the `testng.xml`.
 - HTML report: `target/cucumber-html-report`
 - JSON report: `target/cucumber.json`
 
+---
+
 ## Writing Tests
 
 - Step definitions go in `src/test/java/com/elarenbee/mobile/automation/steps/`
+- Page objects go in `src/test/java/com/elarenbee/mobile/automation/pages/`
+- Utility classes go in `src/test/java/com/elarenbee/mobile/automation/utils/`
 - Feature files go in `src/test/resources/features/`
+- Test data goes in `src/test/resources/data/`
+
+---
+
+## Framework Features
+
+- **Appium** for mobile automation (Android & iOS)
+- **Cucumber** for BDD-style scenarios
+- **TestNG** for test execution and reporting
+- **BrowserStack** integration for cloud device testing
+- **Hooks** for setup/teardown and screenshot on failure
+- **Page Object Model** for maintainable test code
+- **Configurable Capabilities** for flexible environment setup
+
+---
 
 ## Contributing
 
