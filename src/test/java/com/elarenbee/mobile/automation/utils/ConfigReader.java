@@ -22,6 +22,11 @@ public class ConfigReader {
         if (envValue != null) {
             return envValue;
         }
-        return properties.getProperty(key);
+        String propValue = properties.getProperty(key);
+        // If property is encrypted, decrypt it
+        if (propValue != null && propValue.startsWith("ENC(") && propValue.endsWith(")")) {
+            return CredentialManager.decrypt(propValue);
+        }
+        return propValue;
     }
 }
