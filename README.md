@@ -38,6 +38,31 @@ This repository contains a Java-based mobile automation framework using **Appium
 - Appium (no local server needed for BrowserStack)
 - BrowserStack account (set environment variables: `BROWSERSTACK_USERNAME`, `BROWSERSTACK_ACCESS_KEY`, `BROWSERSTACK_ANDROID_APP_URL`, `BROWSERSTACK_IOS_APP_URL`)
 
+## Sample Apps for Testing
+
+You can use these public sample apps for your mobile automation:
+
+**BrowserStack Sample Apps:**
+
+- **Android APK:** [WikipediaSample.apk](https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk)
+- **iOS IPA:** [WikipediaSample.ipa](https://www.browserstack.com/app-automate/sample-apps/ios/WikipediaSample.ipa)
+
+**Sauce Labs Sample Apps:**
+
+- [Sauce Labs Demo Apps (Android/iOS)](https://github.com/saucelabs/sample-app-mobile/releases)
+
+**Appium Open Source Demos:**
+
+- [ApiDemos (Android)](https://github.com/appium/sample-code/tree/master/sample-code/apps)
+- [TestApp (iOS)](https://github.com/appium/sample-code/tree/master/sample-code/apps)
+
+**How to use:**
+1. Download the APK/IPA file.
+2. Upload it to BrowserStack (via Dashboard or API).
+3. Use the resulting `bs://` app URL in your `BROWSERSTACK_ANDROID_APP_URL` or `BROWSERSTACK_IOS_APP_URL` environment variable.
+
+---
+
 ## How to Run
 
 ### 1. Set Environment Variables
