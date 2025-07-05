@@ -1,3 +1,4 @@
+````markdown name=README.md
 # Elarenbee Mobile Automation Suite
 
 This repository contains a Java-based mobile automation framework using **Appium**, **Cucumber**, **TestNG**, and **BrowserStack**. It supports both Android and iOS automated UI testing.
@@ -175,3 +176,4 @@ See [LICENSE](LICENSE).
 ---
 
 **Happy Testing!**
+````
