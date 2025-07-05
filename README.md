@@ -40,6 +40,8 @@ This repository contains a Java-based mobile automation framework using **Appium
                 └── testdata.json
 ```
 
+---
+
 ## Prerequisites
 
 - Java 11+
@@ -135,6 +137,28 @@ Or run both by default using the `testng.xml`.
 3. Commit your changes
 4. Push to the branch
 5. Open a Pull Request
+
+Please also review [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+---
+
+## Best Practices, Security, and Documentation
+
+- **Automation Strategy:** [test_automation_strategy.md](test_automation_strategy.md)
+- **Test Data Strategy:** [test_data_strategy.md](test_data_strategy.md)
+- **Reporting:** [reporting_strategy.md](reporting_strategy.md)
+- **Test Maintenance Plan:** [test_maintenance_plan.md](test_maintenance_plan.md)
+- **Static Analysis:** [static_analysis.md](static_analysis.md)
+- **CI Setup:** [ci_setup.md](ci_setup.md)
+- **Encryption & Secrets Management:** [encryption_and_secrets_management.md](encryption_and_secrets_management.md)
+- **Changelog:** [CHANGELOG.md](CHANGELOG.md)
+- **Security Policy:** [SECURITY.md](SECURITY.md)
+
+---
+
+## License
+
+See [LICENSE](LICENSE).
 
 ---
 
