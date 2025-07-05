@@ -1,4 +1,4 @@
-spackage com.elarenbee.mobile.automation.utils;
+package com.elarenbee.mobile.automation.utils;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
